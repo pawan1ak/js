@@ -104,3 +104,6 @@ console.log(8 | 9)
 console.log(11 & 12)
 
 console.log(11 | 12)
+
+
+console.log('hello pawan')
