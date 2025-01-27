@@ -107,3 +107,46 @@ console.log(11 | 12)
 
 
 console.log('hello pawan')
+
+
+// comman and . operators
+console.log(num1, num2)
+
+/**Increment / decrement operators
+ *           ||
+ *    ---------------------------------------------
+ *    |                                          |
+ *   Post Incre / post dec              pre ince / pre dec
+ */ 
+
+
+let inc = 1;
+console.log(inc) // 1
+console.log(inc++) // 1
+console.log(++inc) //  3
+console.log(inc--)// 3
+console.log(--inc)  // 1     
+
+
+// ternary operator
+// syntax : condition ? "if true" : "if false";
+let age = 90
+let result = age >= 18 ? "user is adult" : "user is under age";
+console.log(result);
+
+let r2 = age == 18 ? "user gets just adult" : age == 20 ? "user is 2years older than getting adult" : age < 18 ? "user is under age" : "Invalid age";
+console.log(r2)
+
+let marks = 50
+let results =marks>=90 ? "A+" : marks< 90 && marks >=80 ? "A" : marks<80 && marks>=70 ? "B+": marks<70 && marks >=60 ? "B": "failed";
+console.log(results)
+
+
+//      nesting of ternary operators
+
+let isLoggedIn = true;
+let userName = 'abc@123';
+let password = "12345";
+
+let r3 = isLoggedIn ?  userName == 'abc@123' ? password == "1234" ? "User is authenticated" : "password is incorrect":"username not matched" : "user is not loggedIn";
+console.log(r3);
